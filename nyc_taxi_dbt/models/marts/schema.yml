@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fact_trips_daily
+    columns:
+      - name: trip_date
+        tests:
+          - not_null
+          - unique
+      - name: total_trips
+        tests:
+          - not_null
